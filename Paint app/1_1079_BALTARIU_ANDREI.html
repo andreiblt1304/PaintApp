@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Aplicatie de desenat</title>
+    <link rel="stylesheet" href="1_1079_BALTARIU_Andrei.css">
+</head>
+<body>
+    <div class="drawOptions">
+        <input type="image" src="media/brush.png" name="btnBrush" id="btnBrush" />        
+        <input type="image" src="media/rectangle.png" id="btnRect" class="btnRect" />
+        <input type="image" src="media/circle.png" id="btnCircle" class="btnCircle" />
+        
+        <input type="image" src="media/spiral.png" id="btnSpiral" class="btnSpiral" />
+        <input type="image" src="media/ellipse.png" id="btnEllipse" class="btnEllipse" />
+
+        <input type="color" id="penColor">
+        <label for="penSize">Brush Thickness</label>
+        <input type="range" id="penSize" min="1" max="200">
+        <label for="rectWidth">Size</label>
+        <input type="range" id="shapeSize" min="1" max="200">
+        <label for="rectWidth">Rectangle Width</label>
+        <input type="range" id="rectWidth" min="1" max="500">
+        <label for="rectHeight">Rectangle Height</label>
+        <input type="range" id="rectHeight" min="1" max="500">
+    </div>
+    <div class="shapes">
+    </div>
+    <div class="canvasOptions">
+        <input type="image" src="media/resize.png" id="btnCanvasSize" class="btnCanvasSize" />
+        <input type="text" id="W" placeholder="width" />
+        <input type="text" id="H" placeholder="height" />
+
+        <input type="image" src="media/download.png" id="btnDownload" class="btnDownload" />
+        <input type="image" src="media/background.png" id="btnCanvasBg" class="btnCanvasBg" />
+        <input type="color" id="canvasColor">
+        <input type="image" src="media/reset.png" id="btnClearCanvas" class="btnClearCanvas" />
+        <label for="btnClearCanvas">Clear</label>
+    </div>
+    <canvas id= "panza" width="0" height="0"></canvas>
+
+    <script type="text/javascript" src="1_1079_BALTARIU_Andrei.js"></script>
+</body>
+</html>

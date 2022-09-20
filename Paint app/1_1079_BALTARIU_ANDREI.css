@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  #panza {
+    color:black;
+    border: 1px solid black;
+    margin-top: 50px;
+  }
